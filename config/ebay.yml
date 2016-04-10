@@ -1,0 +1,22 @@
+#encoding: utf-8
+
+defaults: &default
+  endpoint: https://api.ebay.com/ws/api.dll
+  dev_id: bb9872a5-144c-4333-a657-86bac3531764
+  cert_id: dcfb3e69-38bd-4cee-90bf-f9c26b259404
+  app_id: Beizhanm-2289-4551-9e3a-8276201e18b1
+  runame: Beizhanmanmiao_-Beizhanm-2289-4-xugyt
+  user_token: AgAAAA**AQAAAA**aAAAAA**Z7HKVg**nY+sHZ2PrBmdj6wVnY+sEZ2PrA2dj6AAlYunAZCKpQidj6x9nY+seQ**sOICAA**AAMAAA**znNT0eXwaneMu33dIjUXHcTsR477lKBg6eT7D8UkIZWqQd1Kb/y4CgC+vq96quN3iaHy509u73+PXeDqhwHpzNSA523dT4XDV2i35a8o29/kAHzaWYRVvf6WEKR5DCZlfngGXbGWi32mLdAXy9EiIDee2Cax8S9JVF6mKxDa4F6n2apJ8HZvGqFHqXnfbROzGPT5nTVsa0Rz2HGGDvwXjFvFY9FHMCHsDuI+3beyM5bBuajUY66eauYNmTYlNvnPLhysyMECBLBwc4hF9zTa1VpQlnm15BYQINGVdqCd/fi8kqmT5m2anOCljyDNeZmi6oVTE4c7awbtEGtU/rbtG87aQBBWqOBtbaExosS9guqlE+F9nKynBq1LFfIPffzi3IIdutGpQ6ZewXVGRA72fbyw18aOqyqbD6CHlXyQFEGJY4vgN6T0su7jeVhi3W8ulry/J0ZHtSvqUfkz3X14RlB8Ou0SJOtcDOJyfBiSLw0CqyrT2yATKODIjDAIinxfPRSeAIYzci0P7RdXqwOPezG7x6uEIq+u5ysdZ5HLM/ipi03D5ylZzAL1PbZ2ev/+Fkj48QHJ3lcdLwn871d/3omcOOCUSEveFGDg4MCZDRRhqddY76kT3fct0Ni4WMjyBnsCKLVuDzrXslwQPg8wZyC8wv8ELC9Ns9MunXeUU8ber8SLD3H+tM1fm2dFq6m5gRq9mGizPT4ELSiELKGl8761bP2aeaBjsOKJxuizT/b8OKx/BPr9NzERZeju2BKJ
+
+sandbox: &sandbox
+  endpoint: https://api.ebay.com/ws/api.dll
+
+
+development: &development
+  <<: *default
+
+test:
+  <<: *development
+
+production:
+  <<: *development

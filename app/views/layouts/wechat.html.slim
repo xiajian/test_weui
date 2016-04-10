@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    meta name='viewport' content="width=device-width,initial-scale=1,user-scalable=0"
+    title WeUI
+    = stylesheet_link_tag 'weui-rails', media: 'all'
+    = javascript_include_tag 'http://cdnjs.gtimg.com/cdnjs/libs/zepto/1.1.4/zepto.min.js'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+
+  - current_assets_namespace = assets_namespace
+  body id=current_assets_namespace[:with_action] class='#{current_assets_namespace[:without_action]}' ontouchstart=""
+    = yield
+    = insert_paloma_hook
