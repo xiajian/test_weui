@@ -1,7 +1,7 @@
 source 'https://ruby.taobao.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.5'
+gem 'rails', '4.2.5'
 
 # Use SCSS for stylesheets
 gem 'sass-rails'
@@ -103,3 +103,6 @@ gem 'em-http-request'
 
 # 利用了 EventMachine: https://github.com/AF83/em-eventsource
 gem 'em-eventsource'
+
+# 七牛 SDK:
+gem 'qiniu', '~> 6.5.1'
