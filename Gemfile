@@ -21,6 +21,9 @@ gem 'rails_admin'
 
 gem 'mysql2', '0.3.20'
 
+# font-awesome 字体: https://github.com/FortAwesome/Font-Awesome
+gem 'font-awesome-rails'
+
 gem 'weui-rails'             # 微信的 mobile 样式库: https://github.com/weui/weui
 gem 'adminlte2-rails'        # 后台界面模板: https://github.com/nicolas-besnard/adminlte2-rails
 gem 'slim-rails'
@@ -106,3 +109,7 @@ gem 'em-eventsource'
 
 # 七牛 SDK:
 gem 'qiniu', '~> 6.5.1'
+
+# spina cms 内容
+gem 'spina-template'
+gem 'spina'

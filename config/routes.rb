@@ -7,8 +7,7 @@ Rails.application.routes.draw do
   get 'sockets/chat'
 
   get 'sockets/status'
-
-
+  
   resources :homes do
     collection do
       get :test_comet
@@ -20,7 +19,9 @@ Rails.application.routes.draw do
   end
 
   resources :sockets
-
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  
+  mount Spina::Engine => '/cms'
+  
+  # mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   root 'homes#index'
 end
